@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Navigation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Campus Navigation System</h1>
+
+    <div class="controls">
+
+        <label>Start Location</label>
+
+        <select id="start">
+            <option>Main Gate</option>
+            <option>Admin Block</option>
+            <option>CSE Block</option>
+            <option>ECE Block</option>
+            <option>Mechanical Block</option>
+            <option>Library</option>
+            <option>Hostel</option>
+            <option>Cafeteria</option>
+            <option>Auditorium</option>
+        </select>
+
+        <label>Destination</label>
+
+        <select id="destination">
+            <option>Main Gate</option>
+            <option>Admin Block</option>
+            <option>CSE Block</option>
+            <option>ECE Block</option>
+            <option>Mechanical Block</option>
+            <option>Library</option>
+            <option>Hostel</option>
+            <option>Cafeteria</option>
+            <option>Auditorium</option>
+        </select>
+
+        <button onclick="showSelection()">
+            Find Route
+        </button>
+
+    </div>
+
+    <div id="result"></div>
+
+    <div class="campus-map">
+
+        <svg id="routeSvg"></svg>
+
+        <div class="location gate" id="main-gate">Main Gate</div>
+        <div class="location admin" id="admin-block">Admin Block</div>
+        <div class="location cse" id="cse-block">CSE Block</div>
+        <div class="location ece" id="ece-block">ECE Block</div>
+        <div class="location mech" id="mechanical-block">Mechanical Block</div>
+        <div class="location library" id="library">Library</div>
+        <div class="location hostel" id="hostel">Hostel</div>
+        <div class="location cafeteria" id="cafeteria">Cafeteria</div>
+        <div class="location auditorium" id="auditorium">Auditorium</div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
